@@ -6,8 +6,8 @@ const getTable = (cars) => {
         return(
             <tr>
                 <td>{id}</td>
-                <td>brand</td>
-                <td>year</td>
+                <td>{brand}</td>
+                <td>{year}</td>
             </tr>
         )
         
@@ -21,8 +21,12 @@ function Table() {
         {id: 2, brand: "mazda", year : 2012},
     ]
 
-    return
-    <table>
-        <tbody>{getTable(cars)}<tbody/>
+    return(   
+         <table>
+        <tbody>{getTable(cars)}</tbody>
     </table>
+    )
+
 }
+
+export default Table
